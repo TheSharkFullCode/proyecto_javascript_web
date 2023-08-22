@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" lang="esp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="proyecto_1_css.css">
+    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- #region NAVHeader Menu de Navegacion -->       
+    <div class="header">
+        <div class="navImg">
+            <a href="index.html" class="cafeHome"> cafedealtura.com </a>
+            <img src="cafecito.png" alt="cafecito" class="navImg">
+        </div>
+        <div class="aHcontainer">
+                        <div class="mainNav">
+            <a href="../index.html" class="aHeader"> Tienda </a>
+            <a href="../index.html" class="aHeader"> Suscripción </a>
+            <a href="../index.html" class="aHeader"> Para empresas </a>
+            <a href="../index.html" class="aHeader"> Sobre nosotros </a>
+            <a href="../index.html" class="aHeader"> Contacto </a>
+                        </div>
+        </div>
+        <div class="phoneNumber">
+            
+            <div class="phoneHeader">
+                <img src="tlf - copia.png" alt="tlf">
+                <p> +34 919 49 05 18 </p>
+            </div>
+
+            <!-- <div>
+              <a href="" class="aHeader">
+                 <input type="button" name="boton" value="Iniciar sesión" class="sesionInicio">
+              </a>
+            </div> -->
+            <div>
+                  <!-- <input type="button" name="boton" value="Iniciar sesión" class="sesionInicio"> -->
+                  <button name="boton" value="Iniciar Sesión" id="hiper" class="sesionInicio"><a href="" class="aHeader"> Iniciar Sesión </a></button>
+            </div>
+
+        </div>
+        <div class="orderImg">
+            <img src="bolsaCompra.png" alt="bolsaCompra">          
+            <h5 class="addNumber">  </h5>           
+
+        </div>
+    </div>
+    <!-- #endregion-->
+
+    <!-- #region MAin container seccion1 Descripcion -->
+    <div class="container">
+        <div class="centenidoPrincipal">
+            <div class="seccion1">
+                <div id="Subtilos">
+                    <div>
+                        <h3 id="titleSmal"> De la planta a tu taza </h3>
+                    </div>
+                    <div class="">
+                        <h1> El mejor café del mundo, ahora en tu casa. </h1>
+                    </div>
+                    <div>
+                        <p class="texTo1"> Trabajamos con agricultores de todo el mundo para seleccionar los mejores
+                            granos de
+                            café y que puedas viajar desde la comodidad de tu hogar. </p>
+                    </div>
+                    <div class="SeccionBotones">
+                        <div>
+                            <button id="botn1">Descubrir orígenes</button>
+                        </div>
+                        <div>
+                        <a href="../index.html">
+                            <button id="botn2">  Comprar café</button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="seccion2">
+                <img src="Hero image.png" alt="Hero" class="imgHero">
+
+            </div>
+        </div>
+        <!-- #endregion -->
+    </div>
+
+    <!-- #region  Seccion3 Envio de Cafes -->
+    <div class="seccion3">
+        <h2>Cafe con las mejores condiciones </h2>
+        <div class="gridLayout">
+            <div class="grid">
+                <div class="checkbox1">
+                    <img src="check.png" alt="imgCar">
+                </div>
+                <h3>Recibe tu pedido sin preocuparte</h3>
+                <p class="textoContenido3">Tienes cosas más importantes en la cabeza, por eso con nuestra suscripción de
+                    café, nunca te quedarás
+                    sin tu taza de la mañana</p>
+            </div>
+            
+            <div class="grid">
+                <div class="checkbox1">
+                    <img src="imgCar.png" alt="imgCar">
+                </div>
+                <h3> Envio en 24/48h </h3>
+                <p class="textoContenido3"> Pide tu café antes de las 12 y lo recibirás al dia siguiente. </p>
+            </div>
+
+            <div class="grid">
+                <div class="checkbox1">
+                    <img src="imgRegals.png" alt="imgCar">
+                </div>
+                <h3> Descuentos y Beneficios </h3>
+                <p class="textoContenido3">
+                    Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para que lo descubras junto a
+                    nosotros.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Seccion4 BagCoffes-->
+    <div class="seccion4">
+        <h2> Novedades</h2>
+        <div class="tiendaBag">
+            <div class="boxcaffes">
+                <div class="imgEtiopia">
+                    <img src="Coffee bag.png" alt="coffeebag">
+                </div>
+                <div class="coffeMoney">
+                <p> Costa Rica Tazarru </p>
+                </div>
+                <p> 9,00€</p>
+                <button class="btonCoffe" id="shoppingCoffe" onclick="buyCoffee()"> Añadir</button>
+            </div>
+            <div class="boxcaffes">
+                <div class="imgEtiopia">
+                    <img src="Coffee bagRed.png" alt="coffeebag">
+                </div>
+                <div class="coffeMoney">
+                    <p> Colombia Los Naranjos</p>
+                </div>
+                <p> 9,00€</p>
+                <button class="btonCoffe" onclick="buyCoffee()">Añadir </button>
+            </div>
+            <div class="boxcaffes">
+                <div class="imgEtiopia">
+                    <img src="Coffee bag (4).png" alt="coffeebag">
+                </div>
+                <div class="coffeMoney">
+                    <p> Laos Amanecer </p>
+                </div>
+                <p> 9,00€</p>
+                <button class="btonCoffe" onclick="buyCoffee()">Añadir </button>
+            </div>
+            <div class="boxcaffes">
+                <div class="imgEtiopia">
+                    <img src="Coffee bag (3).png" alt="coffeebag">
+                </div>
+                <div class="coffeMoney">
+                    <p> Etiopía Yrgacheff </p>
+                </div>
+                <p> 9,00€</p>
+                <button class="btonCoffe" onclick="buyCoffee()">Añadir </button>
+            </div>
+        </div>
+        <div class="aVertodo">
+            <a href="" class="aVertodo"> Ver todo </a>
+            <a href=""> <img src="flechaBlack2.png" alt="" class="imgFlecha"> </a>
+        </div>
+    </div>
+    <!-- #endregion -->
+
+
+    <!-- #region Seccion5 preguntas Frecuentes -->
+    <div class="seccion5">
+        <h4 class="seccionH4"> Preguntas frecuentes </h4>
+
+        <div class="seccionPreguntas">
+            <div id="cajaPreguntas">
+                <div class="boxAsk">
+                    <h3>¿Cómo hago el pedido? </h3>
+
+                    <img src="dropDown.png" alt="dropDown" class="dropDownseccion5" id="imgRotate">
+                </div>
+
+                <div class="line"></div>
+                <details>
+                    <summary class="textoFAQ">
+                       <p>
+                           Selecciona el café que desees probar y completa el proceso de compra. Si lo
+                            prefieres, te preguntaremos cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás
+                            sin café.
+                       </p> 
+                    </summary>
+                </details>
+            </div>
+
+            <div id="cajaPreguntas">
+
+                <div class="boxAsk">
+
+                    <h3>¿Por qué los precios son tan bajos? </h3>
+
+                    <img src="dropDown.png" alt="dropDown" class="dropDownseccion5"  id="imgDropDowns">
+
+                </div>
+
+                <div class="line"></div>
+                
+                <span class="textoFAQ2"> Viajamos constantemente para encontrar los mejores granos y a los agricultores más
+                    exigentes. Si podemos ofrecerte estos precios es porque tratamos directamente con los productores de
+                    café, sin intermediarios. Así obtenemos el mejor precio para ti y la persona que está detrás de los
+                    granos de café recibe el mayor beneficio posible.
+                </span>
+                
+            </div>
+            <div id="cajaPreguntas">
+                <div class="boxAsk">
+                    <h4>¿Es posible enviar cafe a la oficina?</h4>                    
+                    <img src="dropDown.png" alt="dropDown" class="dropDownseccion5 flechaGirada" id="imgTraslate">                
+                </div>
+
+                <!-- <div class="line"></div> -->
+                
+                <div class="textInBlock">
+                    <!-- <span id="textoInBloquote">  Trabajamos con agricultores de todo el mundo para seleccionar los
+                    mejores granos de café y que puedas viajar desde la comodidad de tu hogar</span> -->
+
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footPreguntas">
+            <a href="" class="vinculosPreguntas">
+                <p class="AnswerAsk">Resolvemos tus dudas</p>
+            </a>
+            <a href="" class="vinculosPreguntas">
+
+                <img src="FlechaWhite.png" alt="footPreguntas" class="FlechaWhiteIMG">
+
+            </a>
+        </div>
+    </div>
+    <!-- #endregion -->
+
+
+    <!-- #region Sala Star Bar Coffe -->
+    <div class="seccion6">
+
+
+        <div class="breakfasCoffe">
+
+            <div class="coffeShop">
+
+                <section class="boxbreakCoffes">
+
+                    <div class="coffeStarS">
+                        <h4> Pruébalo en nuestro coffee shop</h4>
+                    </div>
+
+                    <div class="textoSeccion6">
+                        <p>
+                            Visita nuestra cafetería en el centro de la ciudad para probar los granos de café antes de hacer
+                            tu pedido y llévate un descuento
+                        </p>
+                    </div>
+                    
+                    <div class="hiperVinculoseccion6">
+                        <a href="https://www.google.com/maps/@40.4443732,-3.6724748,15z?hl=es&entry=ttu" target="_blank" class="hiperEnlaces"> Como llegar </a>
+                        <a href="" class=""> <img src="flechaBlack.png" alt=""> </a>
+                    </div>
+
+                </section>
+            </div>
+
+            
+                <img src="sala_cafe (3).png" alt="sala_cafe" class="imgCoffe6">
+            
+        </div>
+
+    </div>
+    <!-- #endregion -->
+
+
+    <div class="seccion7">
+
+        <div class="formContact7a">
+            <section class="boxTelegrap">
+                <section class="subtituLo8">
+                    <h3> Entra en contacto con nosotros </h3>
+                </section>
+
+                <p>Si tienes dudas, ponte en contacto con nosotros a través del formulario y te responderemos lo antes
+                    posible.</p>
+                <p>TAmbién puedes ponerte en contacto con nostros en nuestra dirección o a través del teléfono de la
+                    tienda.
+                </p>
+                <section>
+                    <p> 742 Evergreen Terrace </p>
+                    <p> Springfield, OR 12345 </p>
+                </section>
+
+            </section>
+            <div class="boxtelePhone">
+                <img src="Icon.png" alt="">
+                <p> +1 (555) 123-4567 </p> <br>
+
+            </div>
+            <div class="boxMail">
+                <img src="Mail.png" alt="">
+                <p class="pSmall"> support@example</p>
+            </div>
+
+            <div class="boxJob">
+                <section>
+                    <p> ¿Buscas un trabajo? </p>
+                </section>
+                <section> <a href=""> Ver nuestras ofertas.</a> </section>
+            </div>
+
+        </div>
+
+        <div class="boxContainerseccion7B">
+
+            <form method="post" action="mailto:oscar.cerdarodriguez126@gmail.com" target="_blank" id="formulary" enctype="text/plain">
+            <div class="seccion7B">        
+
+                <section>
+                    <label id="texto" for="Nombre"> Nombre completo </label>                    
+                </section>  
+
+                <!-- <label for="Nombre" class="separate" > Nombre Completo </label> -->
+
+                <div class="formboxUnderline">                    
+                    <input type="text" class="numero" id="Nombre" name="Nombre">
+                </div>
+
+                <!-- <div class="formboxUnderline0000">
+                    <input type="text" class="numero">
+                </div> -->
+
+                <!-- <p id="texto"> Email </p> -->
+
+                <section  class="separate">
+                    <label for="correo" class="separate">Email:</label>
+                </section>
+                
+                <div class="formboxUnderline0000">
+                    <input type="email" id="correo" name="correo" class="numero2" required >
+                    <!-- <input type="email"  class="numero2"> -->
+                </div>
+
+                <section class="separate">
+                    <label id="texto"  > Teléfono </label>
+                </section>
+
+                <div class="formboxUnderline">
+                    
+                    <div class="listDesplegable">
+
+                        <select  class="selector" value=""> 
+                            <option value=""> US</option>
+                            <option value=""> NIC</option>
+                            <option value=""> UK</option>
+                            <option value=""> ESP </option>
+                        </select>
+
+                    <input type="number" class="numero3" name="Telefono" placeholder=" +1 (555) -9876543"  pattern="[0-9]{1,9}" id="telefono" >
+                    
+                    </div>
+
+                </div>
+
+                <div class="terminoYcondiciones">
+
+                    <section class="cjaComentario7">
+                        <textarea name="texto" id="comentarios" placeholder="¿En qué podemos ayudarte?"></textarea>
+                    </section>
+
+                </div>
+
+                <section class="aceptarTerminos">
+
+                <input type="checkbox" id="terminos">
+
+                    Acepto la <p class="textobold"> <a href="" class="hiperlinkTerminos">  Política de Privacidad  </a> </p> y los <p class="textobold"> <a href="" class="hiperlinkTerminos"> Términos y condiciones. </a> </p> 
+                    
+                </section>
+
+                <section class="separate">
+
+                    <label for="buttonselect7">
+                        <!-- <button id="buttonselect7" onclick="myfuncion()">Enviar</button>     -->
+                        <input type="submit" value="enviar" id="buttonselect7">
+
+                    </label>
+                </section>
+            </div>
+        
+        </div>
+    </div>
+</form>
+
+    <div class="footSeccion8">
+
+        <section class="logCoffe">
+            <p class="parrafoSec8"> cafedealtura.com </p>
+            <img src="cafecito.png" alt="cafecito">
+        </section>
+
+        <section class="footContainer">
+
+            <section class="helpSave">
+                <section>
+                    <p class="parrafoSec8c"> Te ayudamos en </p>
+
+                </section>
+
+                <section class="buttonMailto1">
+
+                    <section class="img8Telephone">
+                        <img src="TelPhone.png" alt="">
+                        <p class="parrafoSec8b"> +34 919 49 05 18 </p>
+                    </section>
+                </section>
+
+                <section class="buttonMailto">
+
+                    <section class="imgMail8">
+                        <img src="MailWhite.png" alt="">
+                        <p> hola@cafedealtura.com </p>
+                    </section>
+                </section>
+            </section>
+            
+            <aside class="footLinks">
+                <section class="shopContact">
+                    <p> Tienda </p>
+                    <p> Suscripción </p>
+                    <p> Para empresas </p>
+                    <p> Sobre nosotros </p>
+                    <p> Contacto </p>
+
+                </section>
+
+                <section class="seguritySave">
+                    <p> Política de privacidad </p>
+                    <p> Política de cookies </p>
+                    <p> Términos y condiciones </p>
+                </section>
+            </aside>
+
+        </section>
+
+    </div>
+    <div class="minifooter">
+          <p>
+            Todos los derechos reservados - Café de Altura SL - 2022
+          </p>
+        
+    </div>
+    <script src="../script.js"> </script>
+</body>
+
+</html>

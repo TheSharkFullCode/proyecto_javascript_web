@@ -1,0 +1,1271 @@
+* {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+body {
+    background-color: snow;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    font-weight: 400;
+    background-color: #2B2A2B;
+    color: #FFFFFF;
+
+}
+
+.navImg {
+    display: flex;
+    height: 24.95px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 23.42px;
+    gap: 7px;
+
+
+}
+
+.cafeHome {
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 35px;
+    font-style: normal;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    gap: 18px;
+
+}
+
+.aHeader {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;  
+    color: #FFFFFF; 
+    /* background-color: white; */
+    /* border: yellow solid 1px; */
+    
+
+
+
+}
+.mainNav{
+    /* border:red solid 1px; */
+    display: flex;
+    gap:45px;
+}
+
+.phoneHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.phoneNumber {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.aHcontainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+    font-size: 14px;
+    align-items: center;
+
+
+}
+
+.sesionInicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 12px;
+    border: 0;
+    background-color: #515051;
+    border-radius: 4px;
+}
+
+/**
+*parte primera navegacion
+*
+*
+**/
+.orderImg{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* border: #111827 solid; */
+}
+.addNumber {
+    /* border: 2px solid #2A5B45; */
+
+    text-align: center;
+    border-radius: 50%;
+    padding: 1px  ;
+    /* background-color:#9B9EA3; */
+    width: 15px;
+    /* color: #3F8F6B; */
+  }
+  
+  #hiper:hover {
+    cursor: pointer;
+  }
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 48px 40px;
+    gap: 8px;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+}
+
+.seccion1 {
+    width: 588px;
+    height: 232px;
+
+}
+
+.centenidoPrincipal {
+    width: 100%;
+    height: 390px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.seccion1 h2 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+    width: 588px;
+    height: 88px;
+}
+
+#titleSmal {
+    display: flex;
+    color: #2A5B45;
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* color: rebeccapurple; */
+
+}
+
+#Subtilos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #111827;
+}
+
+.imgHero {
+    width: 588px;
+    height: 390px;
+}
+
+.SeccionBotones {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+
+}
+
+#botn1 {
+    border: 0;
+    background-color: black;
+    color: white;
+    width: 168px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+
+
+}
+
+#botn2 {
+    border: 0;
+    background-color: #2A5B45;
+    color: white;
+    border-radius: 4px;
+    width: 137px;
+    height: 40px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+h3 {
+    font-weight: 600;
+    size: 18px;
+    line-height: 24px;
+    font-family: 'Outfit';
+
+
+}
+
+.texTo1 {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #111827;
+    gap: 8px;
+
+}
+
+/*
+*
+*Ahora vamos a ver main principal
+*Seccion principal
+*/
+
+.seccion3 {
+    height: 380px;
+    background-image: url(cafe_deAltura.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 147px;
+    gap: 24px;
+
+}
+
+.seccion3 h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+
+}
+
+.checkbox1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #2A5B45;
+    width: 64px;
+    height: 64px;
+    padding: 12px;
+    gap: 8px;
+    align-items: center;
+
+}
+
+.gridLayout {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 24px;
+    align-items: stretch;
+
+}
+
+.grid {
+    height: 232x;
+    width: 316px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    border: 1px solid #F7F5F3;
+    justify-content: center;
+    
+}
+/* .grid {
+    height: 232x;
+    width: 316px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    border: 1px solid #F7F5F3;
+} */
+
+.textoContenido3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #111827;
+    
+
+}
+
+.grid h3 {
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 400px;
+    font-weight: 600;
+    font-family: 'Outfit';
+    color: #111827;
+    text-align: center;
+    width: 268px;
+    padding: 24px;
+    font-style: normal;
+    /* color: magenta; */
+}
+
+/*
+*Seccion4
+*Mi tiendas Bag Coffe
+*
+*
+*/
+
+.btonCoffe {
+    width: 60px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: #2A5B45B2;
+    padding: 8px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btonCoffe:hover {
+    background-color: #2A5B45;
+}
+
+.seccion4 h2 {
+    background-color: #FFFFFF;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 24px;
+    /* color: magenta; */
+    font-family: 'Outfit';
+    color: #2A5B45;
+}
+
+.seccion4 {
+    /* height: 604.49px; */
+    background-color: #FFFFFF;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.aVertodo {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+    text-decoration-line: underline;
+    color: black;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.imgFlecha {
+    width: 18px;
+    height: 8px;
+
+}
+
+.coffeMoney {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    /* color: magenta; */
+}
+
+
+.boxcaffes:hover {
+    /* width: 282px; */
+    height: 391px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px #E3DED7 solid;
+    align-items: center;
+    background-color: #F7F5F3;
+    justify-content: space-evenly;
+
+}
+
+.boxcaffes:hover .btonCoffe{
+    background-color: #2A5B45;
+
+} 
+
+
+.boxcaffes {
+    /* width: 282px; */
+    height: 391px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px #E3DED7 solid;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+/*
+*Mi seccion4 terminada con una pseudo case ahover:
+*a mi caja: boxcaffe
+*
+*/
+
+.seccion5 {
+    background-color: #2A5B45;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 621px;
+    gap: 24px;
+    padding: 48px;
+
+}
+
+.boxAsk {
+    display: flex;
+    width: 650px;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.boxAsk2 {
+    display: flex;
+    width: 650px;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.line {
+    display: flex;
+    margin-left: 14px;
+    width: 640px;
+    border: #E3DED7 solid 1px;
+    justify-content: center;
+
+}
+
+.textoFAQ {
+    display: flex;
+    font-family: 'Outfit';
+    align-items: center;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2B2A2B;
+
+}
+
+.textoFAQ2 {
+    display: flex;
+    font-family: 'Outfit';
+    align-items: center;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2B2A2B;
+    width: 651px;
+    height: 60px;
+    text-align: left;
+    /* color: mediumorchid; */
+
+}
+
+.dropDownseccion5 {
+    width: 10px;
+    height: 6px;
+    margin-top: 7px;
+    /* -webkit-transition: 1s linear; */
+    /* -webkit-transition: transform 2s ease-in-out; */
+
+ 
+}
+
+/*
+
+*aqui tenemos el primer ejemplo de 
+*transform: rotate; con css
+*de una imagen girada 180 grados.
+*/
+
+
+.flechaGirada {
+    transform: rotate(180deg);
+    transition: 1s;
+    /* height: 90px; */
+}
+
+.seccionPreguntas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2A5B45;
+    width: 668px;
+    gap: 16px;
+
+}
+
+.seccionH4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    /* display: flex;
+    justify-content: center;
+    padding: 24px; */
+    /*
+    *de mi texto seccion preguntas
+    *
+    *   hace referencia a mi titulo h4 pero de mi seccion 4
+    */
+}
+
+#cajaPreguntas {
+    border-radius: 10px;
+    background-color: white;
+    justify-content: center;
+    width: 668px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 24px;
+}
+
+
+.footPreguntas {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+}
+
+.FlechaWhiteIMG {
+    width: 18px;
+    height: 8px;
+    border: #FFFFFF;
+}
+
+.vinculosPreguntas {
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+.AnswerAsk {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/*
+*Terminada mi seccion 5 con una sesion de 
+*de preguntas llamadas Preguntas y respuestas
+*
+* y pasamos a la seccion 6
+*/
+
+.seccion6 {
+    background-color: #F7F5F3;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    size: 14px;
+    line-height: 16px;
+    color: #111827;
+    justify-content: space-around;
+    padding: 40px 40px 40px;
+
+}
+
+.breakfasCoffe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111827;
+
+    
+
+}
+
+.coffeStarSecc6 {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.imgCoffe6{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    /* height: 390px; */
+}
+
+
+.coffeShop {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    align-items:flex-start;
+    text-align: left;
+    width: 50%;
+
+}
+.boxbreakCoffes{
+    width: 457px;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+
+    
+}
+
+
+.textoSeccion6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.hiperVinculoseccion6 {
+    display: flex;
+    gap: 19px;
+
+}
+
+.hiperEnlaces {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-decoration-line: underline;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.tiendaBag {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+.seccion6 h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2A5B45;
+    display: flex;
+    justify-content:flex-start;
+    
+
+}
+
+.salaCoffe {
+    width: 588px;
+    height: 390px;
+    border-radius: 20px;
+}
+
+/*
+*Seccion6 finalizada
+*
+*pasamos a la numero 7
+*/
+/* .formboxUnderline0000{
+    display: flex;
+    gap: 10px;
+} */
+
+
+.formboxUnderline {
+    width: 100%;
+    /* border: #D1D5DB solid 1px;  */
+    border-radius: 10px; 
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: 0;    
+    /* padding: 9px 13px; */
+    
+
+}
+
+.formboxUnderline:focus{
+    /* border: #9B9EA3; */
+    border: #3F8F6B solid 1px;
+     
+
+}
+
+.formboxUnderline:focus-within {
+    border: #3F8F6B solid 1px;
+    outline: none;
+    border: 0;
+
+}
+
+.selector {
+    border: 0;
+    outline: none;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    /* width: 50px;
+    height: 30px; */
+}
+/* .selector:hover {
+    width: 50px;
+    height: 30px;
+    border: 0;
+    border: #9B9EA3 solid 1px;
+
+    border-radius: 10px;
+    
+} */
+
+.listDesplegable {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    outline: none;
+    border-radius: 6px;
+    border: #D1D5DB solid 1px;
+    padding: 9px 13px 9px 13px;
+    margin-top: 5px;
+        
+    /* border-radius: 19px; */
+    /* gap: 5px; */
+}
+.listDesplegable:hover {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    outline: none;
+    border: #9B9EA3 1px solid;
+    /* border:red 1px solid; */
+
+    &:focus {
+        border: #3F8F6B solid 1px;
+        outline: none;
+    }
+  
+    
+    
+}
+.listDesplegable:focus-within{
+       border: #3F8F6B solid 1px;
+
+    
+}
+
+.listDesplegable:focus {
+    border: #3F8F6B solid 1px;
+    outline: none;
+}
+
+.numero3{
+    border: 0px;
+    width: 100%;  
+    /* border: #D1D5DB solid 1px;    */
+    /* color: #6B7280; */
+}
+
+.numero3:hover {
+    border:none;
+
+}
+
+.numero3:focus{
+    outline: 0;
+    border: #2A5B45 solid 1 px;
+    
+}
+
+.numero {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    border: #D1D5DB solid 1px;
+    padding: 9px 13px 9px 13px;  
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6B7280;
+    outline: none;
+    border-radius: 6px;
+    margin-top: 5px;
+    
+    &:hover {
+        border: #9B9EA3 solid 1px;
+    }
+    
+    &:focus {
+        border: #3F8F6B solid 1px;
+        outline: none;
+    }
+    /* border-radius: 6px; */
+}
+.numero2 {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    border: #D1D5DB solid 1px;
+    padding: 9px 13px 9px 13px;  
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6B7280;
+    outline: none;
+    border-radius: 6px;
+    margin-top: 5px;
+    
+    &:hover {
+        border: #9B9EA3 solid 1px;
+    }
+    
+    &:focus {
+        border: #3F8F6B solid 1px;
+        outline: none;
+    }
+    /* border-radius: 6px; */
+}
+
+
+
+
+.textobold{
+   text-decoration: underline;
+   text-emphasis-color: #0000;
+   font-weight: 400;
+
+}
+
+.seccion7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E3DED7;
+    padding: 0 40px;
+    /* justify-content:space-around; */
+    /* width:100%;    */
+
+}
+
+.boxTelegrap {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6B7280;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.boxtelePhone {
+    display: flex;
+    /* border: red solid; */
+    gap: 20px;
+    color: #6B7280;
+}
+
+#comentarios {
+    width: 97.6%;
+    height: 142px;
+    outline: none;
+    border-radius: 6px;
+    border: #D1D5DB solid 1px;
+    padding-left: 10px;
+    resize: none;
+    margin-top: 25px;
+    
+}
+#comentarios:hover {
+    height: 142px;
+    outline: none;
+    border-radius: 6px;
+    border: #9B9EA3 solid 1px;
+    padding-left: 10px;
+    
+}
+#comentarios:focus {
+    border: #3F8F6B solid 1px;
+   
+}
+
+.acepCondicion  {
+    background-color: red;
+    appearance: none;
+    /* aspect-ratio: green; */
+    
+    /* width: 100px; */
+}
+
+/* input{
+    as
+} */
+
+/* .pSmall {
+    font-size: 14px;
+    
+    font-family: 'Outfit', sans-serif;
+} */
+
+.boxMail {
+    display: flex;
+    gap: 20px;    
+    font-family :Outfit;
+    font-Weight:400;
+    font-size: 14px;
+    Line-height:16px;
+    color: #6B7280;
+    /* border: #2A5B45 solid; */
+}
+
+.buttonMailto {
+    width: 232px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #515051;
+    border-radius: 4px;
+    /* border: darkorange solid; */
+}
+
+.buttonMailto1 {
+    width: 182px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #515051;
+    border-radius: 4px;
+    /* border: darkorange solid; */
+}
+
+.boxJob {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    gap: 10px
+}
+
+.boxJob a {
+    display: flex;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+
+}
+
+.subtituLo8 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #111827;
+
+}
+
+
+.formContact7a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 10px;
+    width: 50%;
+    background-color: #E3DED7;
+    gap: 30px;
+    /* border: yellow solid; */
+
+}
+
+.seccion7B {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: #FFFFFF;
+    /* border: #2A5B45 solid; */
+
+}
+/* .separate{
+    margin-top: 2px;
+} */
+
+.cjaComentario7:focus{
+    border: #3F8F6B;
+    outline: none;
+
+}
+
+.aceptarTerminos {
+    display: flex;
+    gap:8px;
+    margin-top: 10px;
+}
+#terminos:checked{
+    accent-color: #2A5B45;
+    
+    
+}
+
+.boxContainerseccion7B {
+    width: 50%;
+    background: #FFFFFF;
+    /* border: orchid solid; */
+    padding: 32px 32px 32px 48px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 10px;
+
+}
+
+.boxContainerseccion7b {
+    width: 588px;
+    height: 550px;
+    border: darkgreen solid;
+}
+
+
+#buttonselect7 {
+    width: 90px;
+    height: 40px;
+    border: 0;
+    background: #2A5B45;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+.terminoYcondiciones {
+    display: flex;
+    flex-direction: column;
+    /* outline: none;
+ /* border: 0;  */
+    /* gap:20px; */
+
+}
+
+/*
+*termina mi seccion 7 
+*
+*y pasamos a la seccion8
+*
+*/
+
+.footSeccion8 {
+    /* width: 1289px; */
+    background-color: #1F1815;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    /* border: rebeccapurple solid; */
+
+}
+
+.footContainer {
+    width: 100%;
+    gap: 321px;
+    background: #1F1815;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    gap:420px;
+    
+    /* border:red solid; */
+    
+}
+
+.boxFormulary-logo {
+    display: flex;
+}
+
+.parrafoSec8 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.4628px;
+    line-height: 35px;
+}
+
+.parrafoSec8c {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.boxFormularys8 {
+    display: flex;
+
+}
+
+.logCoffe {
+    /* border: red solid; */
+    width: 100%;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img8Telephone {
+    display: flex;
+    gap: 5px;
+    width: 160px;
+    height: 24px;
+    /* border: orange solid; */
+
+}
+
+.imgMail8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 152px;
+    height: 16px;
+    /* border: orange solid; */
+
+}
+
+.footLinks {
+    display: flex;
+    gap: 127px;
+    position: relative;
+    right: 25%;
+
+    
+}
+
+.shopContact {
+    /* border: olive solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.shopContact p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.helpSave {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: yellow solid; */
+
+}
+
+.seguritySave {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: #E3DED7 solid; */
+    
+}
+
+.seguritySave p{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+.minifooter{
+    background-color: #2B2A2B;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+
+}
+.minifooter{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+.hiperlinkTerminos{
+    font-style: none;
+    color: #374151;
+}
