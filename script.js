@@ -58,13 +58,28 @@ formulario.addEventListener("submit", function(event) {
 
       const confirmacion = confirm("Por favor, acepte los términos y condiciones antes de enviar el formulario.");
 
+      formulario.submit();
+    window.location.reload();
+
+
       if (confirmacion) {
 
-        const checkbox = document.querySelector("#terminos");
+        if(checkbox == checked){
 
-        console.log(checkbox);
+          const checkbox = document.querySelector("#terminos");
+          console.log(checkbox);
+          formulario.submit()
+        // window.location.reload();
+
+
+
+        }
+
+
 
         formulario.submit();
+    window.location.reload();
+
 
       } else {
 
@@ -74,38 +89,52 @@ formulario.addEventListener("submit", function(event) {
   
     window.location.reload();
 });
+// -----------[Segunda validacion]-------------------------------------------------------------->
+// const formulario = document.getElementById("formulary");
+// const buttonSubmit = document.querySelector('#buttonselect7');
 
+// formulario.addEventListener("submit", function(event) {
+//   event.preventDefault();
 
+//   const nombre = document.getElementById("Nombre").value.trim();
+//   const email = document.getElementById("correo").value.trim();
+//   const telefono = document.querySelector(".numero3").value.trim();
+//   const comentario = document.getElementById("comentarios").value.trim();
+
+//   const terminos = document.querySelector("#terminos").checked;
+
+//   if (nombre === "" || telefono === "") {
+//     alert("Por favor, complete todos los campos del formulario.");
+//     return;
+//   }
+
+//   if (email === "") {
+//     alert("El correo no puede estar vacío.");
+//     return;
+//   }
+
+//   if (!terminos) {
+//     const confirmacion = confirm("Por favor, acepte los términos y condiciones antes de enviar el formulario.");
+//     if (!confirmacion) {
+//       return;
+//     }
+//   }
+
+//   const formUser = {
+//     name: nombre,
+//     email: email,
+//     phone: telefono,
+//     message: comentario
+//   };
+//   localStorage.setItem('userForm', JSON.stringify(formUser));
+
+//   alert("Formulario enviado correctamente.");
+
+//   formulario.reset();
+// });
 
 // // -------------------------------------------------------------------------->
 // // ---------[r o t a r    imagen]----------------------------------------------------------------->
-
-// const img = document.getElementById("imgRotate");
-// console.log(img);
-// // img.style.transform = "rotate(180deg)";
-
-
-
-// let rotate = false;
-// img.addEventListener("click",rotateImage);
-// // -webkit-transform:rotate(90deg); 
-
-// function rotateImage(){
-//     if(rotate){
-        
-//         img.style.transform = "rotate(180deg)"
-//         img.style.transition = "1s"
-//         rotate = false;
-//         togglesText()
-        
-//     }
-//     else{
-//         img.style.transform = "rotate(0deg)";
-//         rotate =  true;
-//         togglesText();
-//     }
-
-// }
 
 
 const img = document.getElementById("imgRotate");
@@ -113,150 +142,131 @@ console.log(img);
 
 let rotate = false;
 
-img.addEventListener("click", () => {
+img.addEventListener("click", rotateImage);
 
-  rotateImage();
-
-});
-// --------------------------------------------------------------
+const line = document.querySelector(".line")
 
 function rotateImage() {
-  const img = document.querySelector("#imgRotate");  
 
-  if (rotate) {
+
+  if (!rotate) {
     img.style.transform = "rotate(180deg)";
     img.style.transition = "1s";
-    // togglesText();
-    rotate = false;
+    toggleText();
+    rotate = true;
   } else {
     img.style.transform = "rotate(0deg)";
-    img.style.transition = "1s";
-    // togglesText();
-    rotate = true;
+    rotate = false;
+    toggleText();
+  }
+}
+function toggleText() {
+  const textHidden = document.querySelector(".textoFAQ");
+
+  if (textHidden.style.display === "none") {
+    textHidden.style.display = "block";
+
+    
+  } else {
+    textHidden.style.display = "none";
+
+  
+    
   }
 }
 
-      
+
+// console.log("🚀 ~ file: script.js:123 ~ lineDiv:", lineDiv)
+
+// function addLine(){
+//   // const divContainer = document.querySelector(".line")
+//   document.body.append(line)
+  
+// }
+// textHidden.style.visibility = "visible";
+
+// -------------------------------------------------------------------
 
 
-
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    // lineDiv.unshift();
+    // line.remove();
+            // const lineDiv = document.querySelector(".line")
+    // document.body.append(lineDiv)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 // // --------------------------------------------------------------------------------->
 // // ---------------------------------------------------------->
 
-const textoFAQ2 = document.querySelector("#imgDropDowns");
-console.log("🚀 ~ file: script.js:157 ~ textoFAQ2:", textoFAQ2)
+const imgDrops = document.querySelector("#imgDropDowns");
+const textoFAQ2 = document.querySelector(".textoFAQ2");
 
+let dropDowns = false;
 
-let dropDowns = false
-
-textoFAQ2.addEventListener('click', ()=>{
-
-    if(dropDowns){
-        textoFAQ2.style.transform = "rotate(180deg)";
-        textoFAQ2.style.imgTransition = "1s"
-        dropDowns = false;
-        
-
-        // textInBlock();
-
-    } else {
-
-        textoFAQ2.style.transform = "rotate(0deg)";
-        textoFAQ2.style.transition = "1s  ";
-        dropDowns = true;
-        // textInBlock();
-    }
+imgDrops.addEventListener('click', () => {
+  if (!dropDowns) {
+    imgDrops.style.transform = "rotate(180deg)";
+    imgDrops.style.transition = "1s";
+    togglesText();
+    dropDowns = true;
+  } else {
+    imgDrops.style.transform = "rotate(0deg)";
+    imgDrops.style.transition = "1s";
+    togglesText();
+    dropDowns = false;
+  }
 });
 
-function textInBlock(){
-    const textSpan = document.querySelector(".textoFAQ2");
-    console.log("🚀 ~ file: script.js:184 ~ textInBlock ~ textSpan:", textSpan)
-    
-    if(textSpan){
-        if(textSpan.style.display === "none"){
-            textSpan.style.display = "inline";
-        } else {
-            textSpan.style.display = "none";
-        }
+function togglesText() {
+  const textSpan = document.querySelector(".textoFAQ2");
+
+  if (textSpan) {
+    if (textSpan.style.display === "none") {
+      textSpan.style.display = "block";
+    } else {
+      textSpan.style.display = "none";
     }
+  }
 }
+
+
 // // -------------------------------------------------------------------------------------------->
 
-const textBlock = document.querySelector(".textInBlock");
 
-const imgTransform = document.getElementById("imgTraslate");
-imgTransform.style.transform = 'rotate(180deg)';
+// ------------------------------------------------------------------------------>
 
-// console.log("🚀 ~ file: script.js:200 ~ imgTransform:", imgTransform)
-// imgTransform.style.transform = "rotate(180deg)";
 
-// imgTransform.addEventListener("click", imgTrnaslate);
 
-// let imgDrops = false;
+const imgTransition = document.querySelector('#imgTraslate');
 
-// function imgTrnaslate() {
+const textContainer = document.querySelector('.textInBlock');
 
-//     if (imgDrops) {
+let textSpan = textContainer.querySelector('span');
 
-//        imgTransform.style.transform = "rotate(180deg)";
-//        imgDrops = false;
-//        displayTextNone()
-
-//     } else {
-//         imgTransform.style.transform = "rotate(0deg)";
-//         imgDrops = true;
-//         displayTextNone()
-
-//     }
-// }
-
-   
-    
-const imgTransition = document.querySelector("#imgTraslate");
-
-let textSpan = document.querySelector(".textInBlock span");
-
-imgTransition.addEventListener("click", () => {
+imgTransition.addEventListener('click', () => {
 
   if (textSpan) {
 
     textSpan.remove();
+
     textSpan = null;
 
   } else {
 
-    const lineDiv = document.createElement("div");
-    lineDiv.id = "line"
-    textSpan = document.createElement("span");
-    textSpan.textContent = "Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que puedas viajar desde la comodidad de tu hogar";
-    const selecDiv = document.querySelector(".textInBlock");
-    selecDiv.appendChild(lineDiv);
-    selecDiv.appendChild(textSpan);
-    
+    const lineDiv = document.createElement('div');
+    lineDiv.id = 'line';
+
+    textSpan = document.createElement('span');
+
+    textSpan.textContent =
+      'Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que puedas viajar desde la comodidad de tu hogar';
+      textSpan.style.fontFamily = "'Outfit'"
+      textSpan.style.fontSize = "14px"
+
+    textContainer.appendChild(lineDiv);
+    textContainer.appendChild(textSpan);
   }
 });
 
 // ------------------------------------------------------------------>
-// const button = document.querySelector(".btonCoffe");
-// let count = 1;
-
-
-
-    let count = 1;
-    
-    function buyCoffee(){
-        
-        let addNumber = document.querySelector(".addNumber");
-        addNumber.textContent = count;
-        addNumber.style.backgroundColor =  "#515051";
-        // console.log("🚀 ~ file: script.js:228 ~ addNumber:", addNumber)
-    count++
-
-}
-
-// ----------------------------------------------------------------
+// --------------------------------------------------------------->
 
 
 const elemento = document.querySelector('#imgTraslate'); // Selecciona el elemento que deseas animar
@@ -267,14 +277,159 @@ let girado = false; // Variable para rastrear el estado de la animación
 
 elemento.addEventListener('click', () => {
 
-  if (!girado) {
+  if (girado) {
 
     elemento.style.transform = 'rotate(180deg)'; // Gira el elemento 180 grados
-    girado = true;
+
+    girado = false;
 
   } else {
     elemento.style.transform = 'rotate(0)'; // Restablece la rotación del elemento a 0 grados
-    girado = false;
+    girado = true;
   }
 });
 
+
+
+
+
+// --------------------------------------------------------------------------->
+
+// const coffeBag = {}
+
+let count = 1;
+function buyCoffee(){
+
+  const coffeBag = {
+
+    name: "Etiopía Yrgacheff",
+    precio: "9€",
+    available: true
+  };
+
+  localStorage.setItem("addBagCoffe", JSON.stringify(coffeBag));
+
+    let addNumber = document.querySelector(".addNumber");
+
+    addNumber.textContent = count;
+
+    addNumber.style.backgroundColor =  "#515051";
+
+    // console.log("🚀 ~ file: script.js:228 ~ addNumber:", addNumber)
+    count++
+
+
+}
+
+
+// -------------------------------------------------------------------
+let coffeBag = {};
+// let count2 = 1;
+
+function buyCoffee4() {
+  coffeBag = {
+    name: "Laos Amanecer",
+    precio: "9€",
+    available: true
+  };
+
+  localStorage.setItem("addBagCoffe", JSON.stringify(coffeBag));
+
+  let addNumber = document.querySelector(".addNumber");
+
+  addNumber.textContent = count;
+
+  addNumber.style.backgroundColor = "#515051";
+
+  count++;
+}
+
+const laosAmanecer = document.querySelector("#LaosAmacenecer");
+
+// laosAmanecer.addEventListener("click", buyCoffee4);
+
+// ---------------------------------------------------------------->
+
+
+
+
+function buyCoffee5(){
+  coffeBag ={
+    name: "Colombia los naranjos",
+    precio: "9€",
+    available: true
+
+  }
+  localStorage.setItem("addBagCoffe",JSON.stringify(coffeBag));
+
+  let addNumber = document.querySelector(".addNumber");
+  addNumber.textContent = count;
+
+  addNumber.style.backgroundColor = "#515051";
+  count++;
+
+
+}
+
+const seletButton = document.querySelector("#losNAranjos")
+seletButton.addEventListener("click",buyCoffee5);
+
+// ---------------------------------------------------------------->
+
+
+
+function buyCoffee6(){
+  coffeBag ={
+    name: "Costa Rica Tazarru",
+    precio: "9€",
+    available: true
+
+  }
+  localStorage.setItem("addBagCoffe",JSON.stringify(coffeBag));
+
+  let addNumber = document.querySelector(".addNumber");
+  addNumber.textContent = count;
+
+  addNumber.style.backgroundColor = "#515051";
+  count++;
+
+
+}
+
+const buttonTzaru = document.querySelector("#CostaRica")
+// buttonTzaru.addEventListener("click",buyCoffee6);
+
+
+
+
+// ----------------------------------------------------------
+
+
+
+
+
+
+// ------[-Este codigo si funciona, pero consigo el mismo efecto]---------------------------------------------
+
+
+
+// const imgDrops = document.querySelector("#imgDropDowns");
+// const textoFAQ2 = document.querySelector(".textoFAQ2");
+
+// let dropDowns = false;
+
+// imgDrops.addEventListener('click', () => {
+//   if (!dropDowns) {
+//     imgDrops.style.transform = "rotate(180deg)";
+//     imgDrops.style.transition = "1s";
+//     textoFAQ2.style.opacity = "1";
+//     textoFAQ2.style.height = "70%";
+//     dropDowns = true;
+//   } else {
+//     imgDrops.style.transform = "rotate(0deg)";
+//     imgDrops.style.transition = "1s";
+//     textoFAQ2.style.opacity = "0";
+//     textoFAQ2.style.height = "0";
+//     dropDowns = false;
+//   }
+// });

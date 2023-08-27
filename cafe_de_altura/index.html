@@ -5,7 +5,9 @@
     <meta charset="UTF-8" lang="esp">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="proyecto_1_css.css">
+
     <link rel="stylesheet" href="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,10 +25,10 @@
         <div class="aHcontainer">
                         <div class="mainNav">
             <a href="../index.html" class="aHeader"> Tienda </a>
-            <a href="../index.html" class="aHeader"> Suscripción </a>
-            <a href="../index.html" class="aHeader"> Para empresas </a>
-            <a href="../index.html" class="aHeader"> Sobre nosotros </a>
-            <a href="../index.html" class="aHeader"> Contacto </a>
+            <a href="/enlaces/suscripcion.html" class="aHeader"> Suscripción </a>
+            <a href="/enlaces/paraEmpresa.html" class="aHeader"> Para empresas </a>
+            <a href="/enlaces/sobreNosotros.html" class="aHeader"> Sobre nosotros </a>
+            <a href="/enlaces/contactos.html" class="aHeader"> Contacto </a>
                         </div>
         </div>
         <div class="phoneNumber">
@@ -73,7 +75,9 @@
                     </div>
                     <div class="SeccionBotones">
                         <div>
-                            <button id="botn1">Descubrir orígenes</button>
+                            <a href="/enlaces/sobreNosotros.html">
+                                <button id="botn1">Descubrir orígenes</button>
+                            </a>
                         </div>
                         <div>
                         <a href="../index.html">
@@ -139,7 +143,7 @@
                 <p> Costa Rica Tazarru </p>
                 </div>
                 <p> 9,00€</p>
-                <button class="btonCoffe" id="shoppingCoffe" onclick="buyCoffee()"> Añadir</button>
+                <button class="btonCoffe" id="shoppingCoffe" onclick="buyCoffee6()" id="CostaRica"> Añadir</button>
             </div>
             <div class="boxcaffes">
                 <div class="imgEtiopia">
@@ -149,7 +153,7 @@
                     <p> Colombia Los Naranjos</p>
                 </div>
                 <p> 9,00€</p>
-                <button class="btonCoffe" onclick="buyCoffee()">Añadir </button>
+                <button class="btonCoffe" onclick="buyCoffee3()" id="losNAranjos" >Añadir </button>
             </div>
             <div class="boxcaffes">
                 <div class="imgEtiopia">
@@ -159,7 +163,7 @@
                     <p> Laos Amanecer </p>
                 </div>
                 <p> 9,00€</p>
-                <button class="btonCoffe" onclick="buyCoffee()">Añadir </button>
+                <button class="btonCoffe" onclick="buyCoffee4()" id="LaosAmacenecer">Añadir </button>
             </div>
             <div class="boxcaffes">
                 <div class="imgEtiopia">
@@ -169,11 +173,12 @@
                     <p> Etiopía Yrgacheff </p>
                 </div>
                 <p> 9,00€</p>
-                <button class="btonCoffe" onclick="buyCoffee()">Añadir </button>
+                <button class="btonCoffe" onclick="buyCoffee()" id="">Añadir </button>
             </div>
         </div>
         <div class="aVertodo">
             <a href="" class="aVertodo"> Ver todo </a>
+
             <a href=""> <img src="flechaBlack2.png" alt="" class="imgFlecha"> </a>
         </div>
     </div>
@@ -187,15 +192,15 @@
         <div class="seccionPreguntas">
             <div id="cajaPreguntas">
                 <div class="boxAsk">
-                    <h3>¿Cómo hago el pedido? </h3>
 
-                    <img src="dropDown.png" alt="dropDown" class="dropDownseccion5" id="imgRotate">
+                    <h3>¿Cómo hago el pedido? </h3>
+                    <img src="./Icon abajo.png" alt="dropDown" class="dropDownseccion5" id="imgRotate">
                 </div>
 
                 <div class="line"></div>
                 <details>
                     <summary class="textoFAQ">
-                       <p>
+                       <p class="desplegable">
                            Selecciona el café que desees probar y completa el proceso de compra. Si lo
                             prefieres, te preguntaremos cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás
                             sin café.
@@ -210,7 +215,7 @@
 
                     <h3>¿Por qué los precios son tan bajos? </h3>
 
-                    <img src="dropDown.png" alt="dropDown" class="dropDownseccion5"  id="imgDropDowns">
+                    <img src="./Icon abajo.png" alt="dropDown" class="dropDownseccion5"  id="imgDropDowns" >
 
                 </div>
 
@@ -226,7 +231,7 @@
             <div id="cajaPreguntas">
                 <div class="boxAsk">
                     <h4>¿Es posible enviar cafe a la oficina?</h4>                    
-                    <img src="dropDown.png" alt="dropDown" class="dropDownseccion5 flechaGirada" id="imgTraslate">                
+                    <img src="./Icon abajo.png" alt="dropDown" class="dropDownseccion5 flechaGirada" id="imgTraslate">                
                 </div>
 
                 <!-- <div class="line"></div> -->
@@ -246,7 +251,7 @@
                 <p class="AnswerAsk">Resolvemos tus dudas</p>
             </a>
             <a href="" class="vinculosPreguntas">
-
+                
                 <img src="FlechaWhite.png" alt="footPreguntas" class="FlechaWhiteIMG">
 
             </a>
@@ -277,8 +282,8 @@
                     </div>
                     
                     <div class="hiperVinculoseccion6">
-                        <a href="https://www.google.com/maps/@40.4443732,-3.6724748,15z?hl=es&entry=ttu" target="_blank" class="hiperEnlaces"> Como llegar </a>
-                        <a href="" class=""> <img src="flechaBlack.png" alt=""> </a>
+                        <a href="/cafe_de_altura/index.html" target="_blank" class="hiperEnlaces"> Como llegar </a>
+                        <a href="/cafe_de_altura/index.html" class=""> <img src="flechaBlack.png" alt=""> </a>
                     </div>
 
                 </section>
@@ -318,7 +323,7 @@
 
             </div>
             <div class="boxMail">
-                <img src="Mail.png" alt="">
+                <img src="/cafe_de_altura/Mail.png" alt="">
                 <p class="pSmall"> support@example</p>
             </div>
 
@@ -446,25 +451,56 @@
             
             <aside class="footLinks">
                 <section class="shopContact">
-                    <p> Tienda </p>
-                    <p> Suscripción </p>
-                    <p> Para empresas </p>
-                    <p> Sobre nosotros </p>
-                    <p> Contacto </p>
+                    <a href="/index.html" class="hiperText"> 
+                        <p> Tienda </p>
+
+                    </a>
+                    <a href="/enlaces/suscripcion.html" class="hiperText"> 
+
+                        <p> Suscripción </p>
+                    </a>
+
+                    <a href="/enlaces/paraEmpresa.html" class="hiperText"> 
+                        <p> Para empresas </p>
+
+                    </a>
+                    <a href="/enlaces/sobreNosotros.html" class="hiperText"> 
+
+                        <p> Sobre nosotros </p>
+                    </a> 
+
+                   <a href="/enlaces/contactos.html" class="hiperText"> 
+                    
+                       <p> Contacto </p>
+                   </a>
 
                 </section>
 
                 <section class="seguritySave">
-                    <p> Política de privacidad </p>
+
+                 <a href="" class="hiperText"> 
+                     <p> Política de privacidad </p>
+
+                 </a>
+                <a href="" class="hiperText">
+
                     <p> Política de cookies </p>
-                    <p> Términos y condiciones </p>
+                </a>
+
+                  <a href="" class="hiperText">
+                      <p> Términos y condiciones </p>
+                  </a> 
+
                 </section>
+
             </aside>
 
         </section>
 
     </div>
+
     <div class="minifooter">
+        
           <p>
             Todos los derechos reservados - Café de Altura SL - 2022
           </p>

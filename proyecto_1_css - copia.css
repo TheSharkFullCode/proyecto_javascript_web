@@ -1189,3 +1189,8 @@ h3 {
     font-style: none;
     color: #374151;
 }
+
+.hiperText{
+    text-decoration: none;
+    color: white;
+}
