@@ -488,15 +488,34 @@ justify-content: space-around;
     justify-content: space-evenly;
 
 }
+.selectDiv3{
+    background-color: #F7F5F3;
+
+}
 
 .boxcaffes:hover .btonCoffe{
     background-color: #2A5B45;
 
 } 
 
+.btonCoffe1{
+    /* background-color: #2A5B45; */
+    width: 60px;
+    height: 32px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #2A5B45;
+
+    /* background-color: #2A5B45B2; */
+    padding: 8px;
+    /* color: #FFFFFF; */
+    border: 0;
+    border-radius: 4px;
+
+}
 
 .boxcaffes {
-    /* width: 282px; */
+    width: 382px;
     height: 391px;
     display: flex;
     flex-direction: column;
