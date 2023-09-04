@@ -1,21 +1,41 @@
-(()=>{  console.log("hello  world");})()
+(()=>{  console.log("hello  world ");})()
 
+let getBagCoffe = JSON.parse(localStorage.getItem('addBagCoffe'));
+console.log(getBagCoffe);
 
-// Retrieve the data from local storage
-let storedData = JSON.parse(localStorage.getItem('addBagCoffe'));
-console.log(storedData);
+getBagCoffe.forEach((item) => {
 
-localStorage.getItem("addBagCoffe")
+  const { name, precio } = item;
 
+  const mainDiv = document.querySelector(".productos");
+  mainDiv.style.display = "flex"
+  mainDiv.style.justifyContent = 'space-around';
+  // mainDiv.style.border = "solid blakc"
 
-// Obtener el objeto compartido del local storage
-let sharedObject = JSON.parse(localStorage.getItem('sharedObject'));
-console.log(sharedObject);
+  const div = document.createElement("div");
+  div.classList.add('btonCoffe3')
+  // div.style.border = "solid red"
+  div.style.display = "flex"
+  div.style.flexDirection = "column"
+  // div.style.width = "200px";
+  // div.style.width = "500px"
 
-// Verificar si el objeto existe y utilizarlo
-if (sharedObject) {
-  console.log(sharedObject);
-  // Aquí puedes hacer cualquier operación que necesites con el objeto
-} else {
-  console.log("El objeto compartido no está disponible");
-}
+  // div.style.flexWrap = "wrap";
+  div.style.gap = "5px"
+
+  const img = document.createElement("img");
+
+  img.src = item.img_url;
+
+  div.appendChild(img);
+
+  const nameSpan = document.createElement("span");
+  nameSpan.textContent = name;
+  div.appendChild(nameSpan);
+
+  const priceSpan = document.createElement("span");
+  priceSpan.textContent = precio;
+  div.appendChild(priceSpan);
+
+  mainDiv.appendChild(div);
+});

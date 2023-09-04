@@ -99,12 +99,40 @@ async function getApi() {
              buttonAdd.className = 'btonCoffe';
              buttonAdd.textContent = 'Añadir';
              buttonAdd.id = 'LaosAmacenecer';
+             buttonAdd.classList.add('LaosAmacenecer');
              buttonAdd.onclick = buyCoffee2;
 
 
              subDiv.appendChild(textParagrap);
              subDiv.appendChild(textPreice);
              subDiv.appendChild(buttonAdd);
+
+
+
+             const buttonAddC = document.querySelector('.LaosAmacenecer');
+
+
+             buttonAddC.addEventListener('click', () => {
+
+              coffeBag = {
+                
+                name: "Costa Rica Tazarru",
+                precio: "9€",
+                available: true,
+                img_url: url[0],
+                            
+              };
+
+              //  alert("¡Hola! Has hecho clic en el botón.");
+              
+            objectProduct.unshift(coffeBag);
+
+            localStorage.setItem("addBagCoffe",JSON.stringify(objectProduct));     
+
+             });
+
+
+             
 
 
           } else if (counter === 1) {
@@ -121,7 +149,7 @@ async function getApi() {
              textPreice.textContent = "9,00€"
              buttonAdd.className = 'btonCoffe';
              buttonAdd.textContent = 'Añadir';
-             buttonAdd.id = 'LaosAmacenecer';
+             buttonAdd.id = 'LosNaranjos';
              buttonAdd.onclick = buyCoffee5;
 
 
@@ -129,6 +157,30 @@ async function getApi() {
              subDiv.appendChild(textPreice);
              subDiv.appendChild(buttonAdd);         
             
+
+
+             
+             const buttonAddN = document.querySelector('#LosNaranjos');
+
+
+             buttonAddN.addEventListener('click', () => {
+
+              coffeBag = {
+                
+                name: "Colombia Los Naranjos",
+                precio: "9€",
+                available: true,
+                img_url: url[1],
+                            
+              };
+
+              //  alert("¡Hola! Has hecho clic en el botón.");
+              
+            objectProduct.unshift(coffeBag);
+
+            localStorage.setItem("addBagCoffe",JSON.stringify(objectProduct));     
+
+             });
                         
             // Cambiar el color de fondo del segundo div
           }
@@ -153,6 +205,32 @@ async function getApi() {
              subDiv.appendChild(textPreice);
              subDiv.appendChild(buttonAdd);
 
+            
+             const buttonAddL = document.querySelector('#LaosAmacenecer');
+
+
+             buttonAddL.addEventListener('click', () => {
+
+              coffeBag = {
+                
+                name: "Laos Amacenecer",
+                precio: "9€",
+                available: true,
+                img_url: url[2],
+                            
+              };
+
+              //  alert("¡Hola! Has hecho clic en el botón.");
+              
+            objectProduct.unshift(coffeBag);
+
+            localStorage.setItem("addBagCoffe",JSON.stringify(objectProduct));     
+
+             });
+
+
+             
+
           }
           else if(counter === 3){
             subDiv.classList.add("selectDiv4");
@@ -175,6 +253,30 @@ async function getApi() {
              subDiv.appendChild(textPreice);
              subDiv.appendChild(buttonAdd);  
 
+
+             const buttonAddM = document.querySelector('#Etiopia');
+
+
+             buttonAddM.addEventListener('click', () => {
+
+              coffeBag = {
+                
+                name: "Etiopía Yrgacheff",
+                precio: "9€",
+                available: true,
+                img_url: url[3],
+                            
+              };
+
+              //  alert("¡Hola! Has hecho clic en el botón.");
+              
+            objectProduct.unshift(coffeBag);
+
+            localStorage.setItem("addBagCoffe",JSON.stringify(objectProduct));     
+
+             });
+
+
           }
           else if(counter === 4){
             subDiv.classList.add("selectDiv5");
@@ -188,13 +290,39 @@ async function getApi() {
              textPreice.textContent = "15,00€"
              buttonAdd.className = 'btonCoffe';
              buttonAdd.textContent = 'Añadir';
-             buttonAdd.id = 'LaosAmacenecer';
+             buttonAdd.id = 'Kenia';
              buttonAdd.onclick = buyCoffee6;
 
 
              subDiv.appendChild(textParagrap);
              subDiv.appendChild(textPreice);
              subDiv.appendChild(buttonAdd);  
+
+             const buttonAddk = document.querySelector('#Kenia');
+
+
+             buttonAddk.addEventListener('click', () => {
+
+              coffeBag = {
+                
+                name: "Kenia Ndunduri",
+                precio: "15€",
+                available: true,
+                img_url: url[4],
+                            
+              };
+
+              //  alert("¡Hola! Has hecho clic en el botón.");
+              
+            objectProduct.unshift(coffeBag);
+
+            localStorage.setItem("addBagCoffe",JSON.stringify(objectProduct));     
+
+             });
+
+
+
+
           }
           else if(counter === 5){
 
@@ -269,8 +397,9 @@ async function getApi() {
              buttonAddClick.addEventListener('click', () => {
 
               coffeBag = {
+
                 name: "Costa Rica Monte Bello ",
-                precio: "9€",
+                precio: "12€",
                 available: true,
                 img_url: url[6],
                             
@@ -631,25 +760,23 @@ div2.appendChild(p13);
 
 
         function buyCoffee2() {
-            const objectProduct = [];
+            // const objectProduct = [];
             
-            coffeBag = {
-              name: "Costa Rica Tazarru",
-              precio: "9€",
-              available: true,
-            //   img_url:"https://cafe_de_altura/Coffee bag.png",
-            //   img_src: product.img_url;
+            // coffeBag = {
+            //   name: "Costa Rica Tazarru",
+            //   precio: "9€",
+            //   available: true,
+            // //   img_url:"https://cafe_de_altura/Coffee bag.png",
+            // //   img_src: product.img_url;
               
-            };
+            // };
         
-            img.src = product.img_url;
+            // img.src = product.img_url;
     
-            const productsArray = data.products;
+            // const productsArray = data.products;
             
 
-    // const firstImage = document.querySelector('img'); // Selecciona la primera imagen del DOM
-
-  
+    // const firstImage = document.querySelector('img'); // Selecciona la primera imagen del DOM  
 
   
     let addNumber = document.querySelector(".addNumber");
@@ -670,22 +797,22 @@ div2.appendChild(p13);
 
 function buyCoffee5(){
 
-    coffeBag ={
-      name: "Colombia los naranjos",
-      precio: "9€",
-      available: true,
-      img:"https://cafe_de_altura/Coffee bag.png"
-    //   "https://example.com/image.jpg"
+    // coffeBag ={
+    //   name: "Colombia los naranjos",
+    //   precio: "9€",
+    //   available: true,
+    //   img:"https://cafe_de_altura/Coffee bag.png"
+    // //   "https://example.com/image.jpg"
 
   
-    }
+    // }
 
     // const {name,precio,available,img} = coffeBag
 
 
-    objectProduct.unshift(coffeBag);
+    // objectProduct.unshift(coffeBag);
 
-    localStorage.setItem("addBagCoffe",JSON.stringify(objectProduct));
+    // localStorage.setItem("addBagCoffe",JSON.stringify(objectProduct));
 
      
 
@@ -703,7 +830,7 @@ function buyCoffee5(){
   
 
   
-  const seletButton = document.querySelector("#losNAranjos")
+  // const seletButton = document.querySelector("#losNAranjos")
 //   seletButton.addEventListener("click",buyCoffee5);
 
 
@@ -712,17 +839,17 @@ function buyCoffee5(){
 // let count2 = 1;
 
 function buyCoffee4() {
-  coffeBag = {
-    name: "Laos Amanecer",
-    precio: "9€",
-    available: true,
-    img:"https://cafe_de_altura/coffe-bag.png"
+  // coffeBag = {
+  //   name: "Laos Amanecer",
+  //   precio: "9€",
+  //   available: true,
+  //   img:"https://cafe_de_altura/coffe-bag.png"
 
-  };
+  // };
 
-  objectProduct.unshift(coffeBag)
+  // objectProduct.unshift(coffeBag)
 
-  localStorage.setItem("addBagCoffe", JSON.stringify(objectProduct));
+  // localStorage.setItem("addBagCoffe", JSON.stringify(objectProduct));
 
   let addNumber = document.querySelector(".addNumber");
 
@@ -743,19 +870,19 @@ function buyCoffee4() {
 // let count = 1;
 function buyCoffee(){
 
-  const coffeBag = {
+  // const coffeBag = {
 
-    name: "Etiopía Yrgacheff",
-    precio: "9€",
-    available: true,
-    img:"/cafe_de_altura/Coffee bag (3).png"
-    // /cafe_de_altura/Coffee bag (3).png"
+  //   name: "Etiopía Yrgacheff",
+  //   precio: "9€",
+  //   available: true,
+  //   img:"/cafe_de_altura/Coffee bag (3).png"
+  //   // /cafe_de_altura/Coffee bag (3).png"
 
-  };
+  // };
 
-    objectProduct.unshift(coffeBag)
+    // objectProduct.unshift(coffeBag)
 
-    localStorage.setItem("addBagCoffe", JSON.stringify(objectProduct));
+    // localStorage.setItem("addBagCoffe", JSON.stringify(objectProduct));
 
     let addNumber = document.querySelector(".addNumber");
 
@@ -772,15 +899,15 @@ function buyCoffee(){
 // ---------------------------------------------------------------------------->
 
 function buyCoffee6(){
-    coffeBag ={
-      name: "Kenia Ndunduri",
-      precio: "15€",
-      available: true,
-      img:"/cafe_de_altura/coffe-bag.png"
+    // coffeBag ={
+    //   name: "Kenia Ndunduri",
+    //   precio: "15€",
+    //   available: true,
+    //   img:"/cafe_de_altura/coffe-bag.png"
   
-    }
+    // }
 
-    localStorage.setItem("addBagCoffe",JSON.stringify(coffeBag));
+    // localStorage.setItem("addBagCoffe",JSON.stringify(coffeBag));
   
     let addNumber = document.querySelector(".addNumber");
     addNumber.textContent = count;
@@ -792,15 +919,15 @@ function buyCoffee6(){
   }
   
   function buyCoffee7(){
-    coffeBag ={
-      name: "Etiopía Sídamo",
-      precio: "17€",
-      available: true,
-      img:"/cafe_de_altura/coffe-bag.png"
+    // coffeBag ={
+    //   name: "Etiopía Sídamo",
+    //   precio: "17€",
+    //   available: true,
+    //   img:"/cafe_de_altura/coffe-bag.png"
 
   
-    }
-    localStorage.setItem("addBagCoffe",JSON.stringify(coffeBag));
+    // }
+    // localStorage.setItem("addBagCoffe",JSON.stringify(coffeBag));
   
     let addNumber = document.querySelector(".addNumber");
     addNumber.textContent = count;
@@ -812,13 +939,13 @@ function buyCoffee6(){
   }
   
   function buyCoffee9(){
-    coffeBag ={
-      name: "Costa Rica Monte Bello",
-      precio: "12€",
-      available: true
+    // coffeBag ={
+    //   name: "Costa Rica Monte Bello",
+    //   precio: "12€",
+    //   available: true
   
-    }
-    localStorage.setItem("addBagCoffe",JSON.stringify(coffeBag));
+    // }
+    // localStorage.setItem("addBagCoffe",JSON.stringify(coffeBag));
   
     let addNumber = document.querySelector(".addNumber");
     addNumber.textContent = count;
@@ -855,8 +982,8 @@ function buyCoffee6(){
 getApi();
 
 
-// Supongamos que tienes un objeto llamado "myObject" que deseas compartir
-let myObject = { name: "John", age: 25 };
+// // Supongamos que tienes un objeto llamado "myObject" que deseas compartir
+// let myObject = { name: "John", age: 25 };
 
-// Almacenar el objeto en el local storage
-localStorage.setItem('sharedObject', JSON.stringify(myObject));
+// // Almacenar el objeto en el local storage
+// localStorage.setItem('sharedObject', JSON.stringify(myObject));

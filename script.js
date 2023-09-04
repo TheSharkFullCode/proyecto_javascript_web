@@ -7,6 +7,7 @@
     saludar("oscar");
 
 
+    const objectProduct = [];
 
 
     async function setApiCoffe(){
@@ -15,13 +16,9 @@
         const data = await response.json();
 
         const arrayObej = data.products;
-        console.log(arrayObej);
-
-
+        // console.log(arrayObej);
 
         // localStorage.setItem("newproduct", JSON.stringify(arrayObej));
-
-
 
         const urls = arrayObej.map((element)=>element.img_url);
         const div = document.querySelector("#newImg")
@@ -48,8 +45,6 @@
           img4.src = urls[3]
 
 
-
-
           div1.appendChild(img2);
           div.appendChild(img)
           div3.appendChild(img3)
@@ -68,9 +63,6 @@
 
     }
     setApiCoffe()
-
-
-
 
 
 // ------------------------------------------------------------------------------------------>
@@ -114,91 +106,31 @@ formulario.addEventListener("submit", function(event) {
     }
   
     if (emailVacio) {
-      alert ("El correo no puede estar vacío.")
-      // alert("Por favor, complete el campo de correo electrónico.");
+      alert("El correo no puede estar vacío.");
       return;
     }
 
-    if (!terminos) {
+ 
+if (!terminos) {
+  const confirmacion = confirm("Por favor, acepte los términos y condiciones antes de enviar el formulario.");
 
-      const confirmacion = confirm("Por favor, acepte los términos y condiciones antes de enviar el formulario.");
-
+  if (confirmacion) {
+    const checkbox = document.querySelector("#terminos");
+    if (checkbox.checked) {
       formulario.submit();
-    window.location.reload();
-
-
-      if (confirmacion) {
-
-        if(checkbox == checked){
-
-          const checkbox = document.querySelector("#terminos");
-          console.log(checkbox);
-          formulario.submit()
-        // window.location.reload();
-
-
-
-        }
-
-
-
-        formulario.submit();
-    window.location.reload();
-
-
-      } else {
-
-        return;
-      }
+      window.location.reload();
     }
+  } else {
+    return;
+  }
+}
+
+formulario.submit();
+window.location.reload();
   
-    window.location.reload();
+    // window.location.reload();
 });
 // -----------[Segunda validacion]-------------------------------------------------------------->
-// const formulario = document.getElementById("formulary");
-// const buttonSubmit = document.querySelector('#buttonselect7');
-
-// formulario.addEventListener("submit", function(event) {
-//   event.preventDefault();
-
-//   const nombre = document.getElementById("Nombre").value.trim();
-//   const email = document.getElementById("correo").value.trim();
-//   const telefono = document.querySelector(".numero3").value.trim();
-//   const comentario = document.getElementById("comentarios").value.trim();
-
-//   const terminos = document.querySelector("#terminos").checked;
-
-//   if (nombre === "" || telefono === "") {
-//     alert("Por favor, complete todos los campos del formulario.");
-//     return;
-//   }
-
-//   if (email === "") {
-//     alert("El correo no puede estar vacío.");
-//     return;
-//   }
-
-//   if (!terminos) {
-//     const confirmacion = confirm("Por favor, acepte los términos y condiciones antes de enviar el formulario.");
-//     if (!confirmacion) {
-//       return;
-//     }
-//   }
-
-//   const formUser = {
-//     name: nombre,
-//     email: email,
-//     phone: telefono,
-//     message: comentario
-//   };
-//   localStorage.setItem('userForm', JSON.stringify(formUser));
-
-//   alert("Formulario enviado correctamente.");
-
-//   formulario.reset();
-// });
-
-// // -------------------------------------------------------------------------->
 // // ---------[r o t a r    imagen]----------------------------------------------------------------->
 
 
@@ -234,29 +166,13 @@ function toggleText() {
     
   } else {
     textHidden.style.display = "none";
-
-  
+ 
     
   }
 }
 
 
-// console.log("🚀 ~ file: script.js:123 ~ lineDiv:", lineDiv)
-
-// function addLine(){
-//   // const divContainer = document.querySelector(".line")
-//   document.body.append(line)
-  
-// }
-// textHidden.style.visibility = "visible";
-
-// -------------------------------------------------------------------
-
-
-    // lineDiv.unshift();
-    // line.remove();
-            // const lineDiv = document.querySelector(".line")
-    // document.body.append(lineDiv)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+  // document.body.append(lineDiv)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 // // --------------------------------------------------------------------------------->
 // // ---------------------------------------------------------->
 
@@ -293,7 +209,6 @@ function togglesText() {
 
 
 // // -------------------------------------------------------------------------------------------->
-
 
 // ------------------------------------------------------------------------------>
 
@@ -361,45 +276,32 @@ elemento.addEventListener('click', () => {
 // --------------------------------------------------------------------------->
 
 // const coffeBag = {}
-const objectProduct = [];
-
 // const objectProduct = [];
 
+
 let count = 1;
-function buyCoffee(){
 
-  const coffeBag = {
 
+function buyCoffee() {
+
+  coffeBag = {
     name: "Etiopía Yrgacheff",
     precio: "9€",
-    available: true
+    available: true,
+    // img: img_url[0],
   };
-  console.log(coffeBag);
 
-  
-  
-  objectProduct.unshift(arrayObej)
-  localStorage.setItem("newproduct", JSON.stringify(arrayObej));
-  
-  // localStorage.setItem("addBagCoffe", JSON.stringify(coffeBag));
-  
+  // objectProduct.unshift(coffeBag)
+  localStorage.setItem("addBagCoffe", JSON.stringify(coffeBag));
+
   let addNumber = document.querySelector(".addNumber");
-  
+
   addNumber.textContent = count;
-  
-  addNumber.style.backgroundColor =  "#515051";
-  
-  // console.log("🚀 ~ file: script.js:228 ~ addNumber:", addNumber)
-  count++
-  
-  
+
+  addNumber.style.backgroundColor = "#515051";
+
+  count++;
 }
-const selecciona = document.querySelector(".imagenuno").addEventListener("click",()=>{
-  let addres =   img.src = urls[1];
-
-
-
-})
 
 
 // -------------------------------------------------------------------
@@ -407,10 +309,12 @@ let coffeBag = {};
 // let count2 = 1;
 
 function buyCoffee4() {
+
   coffeBag = {
     name: "Laos Amanecer",
     precio: "9€",
-    available: true
+    available: true,
+    // img: img_url[2],
   };
 
   localStorage.setItem("addBagCoffe", JSON.stringify(coffeBag));
@@ -424,7 +328,8 @@ function buyCoffee4() {
   count++;
 }
 
-const laosAmanecer = document.querySelector("#LaosAmacenecer");
+// const laosAmanecer = document.querySelector("#");
+
 
 // laosAmanecer.addEventListener("click", buyCoffee4);
 
@@ -433,13 +338,16 @@ const laosAmanecer = document.querySelector("#LaosAmacenecer");
 
 
 
-function buyCoffee5(){
+function buyCoffee3(){
+
+  // alert("hello")
   coffeBag ={
     name: "Colombia los naranjos",
     precio: "9€",
     available: true
 
   }
+
   localStorage.setItem("addBagCoffe",JSON.stringify(coffeBag));
 
   let addNumber = document.querySelector(".addNumber");
@@ -448,23 +356,28 @@ function buyCoffee5(){
   addNumber.style.backgroundColor = "#515051";
   count++;
 
-
 }
 
 const seletButton = document.querySelector("#losNAranjos")
-seletButton.addEventListener("click",buyCoffee5);
+// seletButton.addEventListener("click",buyCoffee5);
 
 // ---------------------------------------------------------------->
 
 
 
 function buyCoffee6(){
+
+// alert("hello")
   coffeBag ={
+
     name: "Costa Rica Tazarru",
     precio: "9€",
-    available: true
+    available: true,
+    // img:img_url[0]
 
   }
+
+
   localStorage.setItem("addBagCoffe",JSON.stringify(coffeBag));
 
   let addNumber = document.querySelector(".addNumber");
@@ -476,7 +389,7 @@ function buyCoffee6(){
 
 }
 
-const buttonTzaru = document.querySelector("#CostaRica")
+// const buttonTzaru = document.querySelector("#CostaRica")
 // buttonTzaru.addEventListener("click",buyCoffee6);
 
 

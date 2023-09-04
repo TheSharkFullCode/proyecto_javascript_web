@@ -368,6 +368,7 @@ h3 {
     border-radius: 4px;
     cursor: pointer;
 }
+
 .btonCoffe2 {
     width: 65px;
     height: 32px;
@@ -378,6 +379,25 @@ h3 {
     border: 0;
     border-radius: 4px;
     /* cursor: pointer; */
+}
+.btonCoffe3 {
+    width: 165px;
+    height: 292px;
+    border-radius: 8px;
+    background-color: #f7eaeab2;
+    padding: 8px;
+    display: flex;
+    justify-content: space-around;
+    color: #295f38;
+    border: 0;
+    border-radius: 4px;
+    /* cursor: pointer; */
+}
+
+.productos{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .btonCoffe:hover {
