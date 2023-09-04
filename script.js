@@ -1,9 +1,74 @@
 (()=>{
     console.log("este es un mensaje por consola");})();
+
     function saludar(nombre){
         console.log(`hola ${nombre}`);
     }
     saludar("oscar");
+
+
+
+
+    async function setApiCoffe(){
+      try{
+        const response = await  fetch('https://cafe-de-altura.vercel.app/api/products');
+        const data = await response.json();
+
+        const arrayObej = data.products;
+        console.log(arrayObej);
+
+
+
+        // localStorage.setItem("newproduct", JSON.stringify(arrayObej));
+
+
+
+        const urls = arrayObej.map((element)=>element.img_url);
+        const div = document.querySelector("#newImg")
+        const div1 = document.querySelector("#etiopia")
+        const div3 = document.querySelector("#amanecer")
+        const div4 = document.querySelector("#gachef")
+        console.log(urls);
+
+        // arrayObej.forEach(url => {
+
+          const img = document.createElement("img");
+          img.classList.add("imagenuno")
+          img.src = urls[1];
+
+
+          const img2 = document.createElement("img");
+          img2.src = urls[0];
+          img2.classList.add("imagen1");
+
+          const img3 = document.createElement("img");
+          img3.src = urls[2]
+
+          const img4 = document.createElement("img");
+          img4.src = urls[3]
+
+
+
+
+          div1.appendChild(img2);
+          div.appendChild(img)
+          div3.appendChild(img3)
+          div4.appendChild(img4);
+          
+        // });
+
+
+      }catch(error){
+
+        console.log(error);
+
+      }
+
+
+
+    }
+    setApiCoffe()
+
 
 
 
@@ -296,6 +361,9 @@ elemento.addEventListener('click', () => {
 // --------------------------------------------------------------------------->
 
 // const coffeBag = {}
+const objectProduct = [];
+
+// const objectProduct = [];
 
 let count = 1;
 function buyCoffee(){
@@ -306,20 +374,32 @@ function buyCoffee(){
     precio: "9€",
     available: true
   };
+  console.log(coffeBag);
 
-  localStorage.setItem("addBagCoffe", JSON.stringify(coffeBag));
-
-    let addNumber = document.querySelector(".addNumber");
-
-    addNumber.textContent = count;
-
-    addNumber.style.backgroundColor =  "#515051";
-
-    // console.log("🚀 ~ file: script.js:228 ~ addNumber:", addNumber)
-    count++
-
-
+  
+  
+  objectProduct.unshift(arrayObej)
+  localStorage.setItem("newproduct", JSON.stringify(arrayObej));
+  
+  // localStorage.setItem("addBagCoffe", JSON.stringify(coffeBag));
+  
+  let addNumber = document.querySelector(".addNumber");
+  
+  addNumber.textContent = count;
+  
+  addNumber.style.backgroundColor =  "#515051";
+  
+  // console.log("🚀 ~ file: script.js:228 ~ addNumber:", addNumber)
+  count++
+  
+  
 }
+const selecciona = document.querySelector(".imagenuno").addEventListener("click",()=>{
+  let addres =   img.src = urls[1];
+
+
+
+})
 
 
 // -------------------------------------------------------------------

@@ -715,8 +715,8 @@ justify-content: space-around;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    width: 152px;
+    gap: 5px;
+    width: 50px;
     height: 16px;
     /* border: orange solid; */
 
@@ -791,7 +791,7 @@ justify-content: space-around;
 }
 
 .buttonMailto {
-    width: 232px;
+    width: 240px;
     height: 48px;
     display: flex;
     justify-content: center;
@@ -820,4 +820,42 @@ justify-content: space-around;
     color: white;
 
 }
+/* -------------------------------------- */
+.productos{
+    display: flex;
+    /* border: #2A5B45 solid; */
+    width: 700px;
+    /* text-align: center; */
+    align-items: center;
+}
 
+#Cesta{
+    display: flex;
+    /* border: #2A5B45 solid; */
+    width: 500px;
+}
+#seccionCesta{
+    display: flex;
+}
+
+.imgSize{
+    width: 185px;
+    height: 200px;
+}
+.boderSide{
+    /* display: flex; */
+    border: #111827 solid;
+    width: 500px;
+    background-color: #c4c4c4;
+
+}
+.lineal{
+    display: flex;
+    border:#374151 solid;
+}
+.productos2{
+    margin-left: 150px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
